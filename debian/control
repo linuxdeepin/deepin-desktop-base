@@ -1,0 +1,12 @@
+Source: deepin-desktop-base
+Section: misc
+Priority: optional
+Maintainer: 宋文武 <songwenwu@linuxdeepin.com>
+Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 9)
+
+Package: deepin-desktop-base
+Architecture: all
+Depends: ${misc:Depends}, deepin-keyring,
+ eject, plymouth-theme-deepin-logo
+Description: Base files for Deepin Desktop
