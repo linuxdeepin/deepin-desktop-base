@@ -1,4 +1,4 @@
-VERSION := 2015
+VERSION := 15 Desktop
 RELEASE := Beta
 
 all: build
