@@ -1,3 +1,9 @@
+deepin-desktop-base (2015.12.11) unstable; urgency=medium
+
+  * modify 2015 desktop to 2015, grub-update. 
+
+ -- Deepin Packages Builder <packages@linuxdeepin.com>  Fri, 11 Dec 2015 13:34:44 +0800
+
 deepin-desktop-base (2015.12.8) unstable; urgency=medium
 
   * update to 2015 beta. 
