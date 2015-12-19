@@ -1,5 +1,5 @@
 VERSION := 15
-RELEASE := Beta
+RELEASE := RC
 
 all: build
 
