@@ -9,6 +9,9 @@ build:
 
 install:
 	mkdir -p ${DESTDIR}/etc
+	mkdir -p ${DESTDIR}/usr/share/i18n
+	install -Dm644 files/i18n_dependent.json  ${DESTDIR}/usr/share/i18n/i18n_dependent.json
+	install -Dm644 files/language_info.json  ${DESTDIR}/usr/share/i18n/language_info.json
 	install -Dm644 files/desktop-version ${DESTDIR}/usr/lib/deepin/desktop-version
 	install -Dm644 files/lsb-release     ${DESTDIR}/etc/lsb-release
 	install -Dm644 files/deepin-logo.png ${DESTDIR}/usr/share/plymouth/deepin-logo.png
