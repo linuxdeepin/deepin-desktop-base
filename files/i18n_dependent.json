@@ -15,12 +15,22 @@
 				},
 				{
 					"FormatType": 2, 
-					"DependentPkg": "libreoffice-common", 
+					"DependentPkg": "libreoffice-common",
 					"PkgPull": "libreoffice-l10n-"
 				},
 				{
-					"FormatType": 2, 
-					"DependentPkg": "libreoffice-common", 
+					"FormatType": 2,
+					"DependentPkg": "libreoffice-common",
+					"PkgPull": "libreoffice-help-"
+				},
+				{
+					"FormatType": 2,
+					"DependentPkg": "libreoffice",
+					"PkgPull": "libreoffice-l10n-"
+				},
+				{
+					"FormatType": 2,
+					"DependentPkg": "libreoffice",
 					"PkgPull": "libreoffice-help-"
 				},
 				{
