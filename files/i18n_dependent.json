@@ -35,8 +35,8 @@
 				},
 				{
 					"FormatType": 2, 
-					"DependentPkg": "firefox", 
-					"PkgPull": "firefox-locale-"
+					"DependentPkg": "firefox-dde", 
+					"PkgPull": "firefox-l10n-"
 				},
 				{
 					"FormatType": 2, 
