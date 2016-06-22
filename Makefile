@@ -6,6 +6,7 @@ all: build
 build:
 	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version.in > files/desktop-version
 	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
+	install -Dm755 scripts/postinst debian/postinst
 
 install:
 	mkdir -p ${DESTDIR}/etc
@@ -23,3 +24,4 @@ install:
 clean:
 	rm -f files/desktop-version
 	rm -f files/lsb-release
+	rm -f debian/postinst
