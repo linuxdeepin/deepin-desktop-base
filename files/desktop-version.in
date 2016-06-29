@@ -3,6 +3,6 @@ Version=@@VERSION@@
 Type=Professional
 Type[zh_CN]=专业版
 Edition=Y2016E0001
-CopyRight=Y2016CR0001
+Copyright=Y2016CR0001
 [Addition]
 Milestone=@@RELEASE@@
