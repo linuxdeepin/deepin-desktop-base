@@ -1,4 +1,4 @@
-VERSION := 15.2
+VERSION := 15
 RELEASE := 
 
 all: build
