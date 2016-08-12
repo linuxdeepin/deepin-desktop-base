@@ -167,7 +167,7 @@
 					"LangCode": "", 
 					"FormatType": 2, 
 					"DependentPkg": "libreoffice-common", 
-					"PkgPull": "hunspell-"
+					"PkgPull": "myspell-"
 				},
 				{
 					"LangCode": "af", 
