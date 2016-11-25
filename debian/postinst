@@ -14,7 +14,7 @@ case "${1}" in
         fi
 
 	    update-alternatives --install /usr/share/backgrounds/default_background.jpg \
-		    deepin-default-background /usr/share/backgrounds/desktop.jpg 50
+		    deepin-default-background /usr/share/backgrounds/deepin/desktop.jpg 50
 
 	    update-alternatives --install /etc/deepin-version \
 		    deepin-version /usr/lib/deepin/desktop-version 50

@@ -6,7 +6,7 @@ set -e
 case "$1" in
     remove|deconfigure|failed-upgrade)
 	update-alternatives --remove deepin-default-background \
-	    /usr/share/backgrounds/desktop.jpg
+	    /usr/share/backgrounds/deepin/desktop.jpg
 
 	update-alternatives --remove deepin-version \
 	    /usr/lib/deepin/desktop-version

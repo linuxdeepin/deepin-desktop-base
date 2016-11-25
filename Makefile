@@ -12,12 +12,13 @@ install:
 	mkdir -p ${DESTDIR}/usr/share/i18n
 	mkdir -p ${DESTDIR}/usr/share/distro-info
 	mkdir -p ${DESTDIR}/usr/share/python-apt/templates
+	mkdir -p ${DESTDIR}/usr/share/backgrounds/deepin
 	install -Dm644 files/i18n_dependent.json  ${DESTDIR}/usr/share/i18n/i18n_dependent.json
 	install -Dm644 files/language_info.json  ${DESTDIR}/usr/share/i18n/language_info.json
 	install -Dm644 files/desktop-version ${DESTDIR}/usr/lib/deepin/desktop-version
 	install -Dm644 files/lsb-release     ${DESTDIR}/etc/lsb-release
 	install -Dm644 files/deepin-logo.png ${DESTDIR}/usr/share/plymouth/deepin-logo.png
-	install -Dm644 files/desktop.jpg     ${DESTDIR}/usr/share/backgrounds/desktop.jpg
+	install -Dm644 files/desktop.jpg     ${DESTDIR}/usr/share/backgrounds/deepin/desktop.jpg
 	[ -e files/systemd.conf ] && install -Dm644 files/systemd.conf ${DESTDIR}/etc/systemd/system.conf.d/deepin-base.conf
 	install -Dm644 files/Deepin.info     ${DESTDIR}/usr/share/python-apt/templates/Deepin.info
 	install -Dm644 files/Deepin.mirrors     ${DESTDIR}/usr/share/python-apt/templates/Deepin.mirrors
