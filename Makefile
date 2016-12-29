@@ -1,6 +1,13 @@
 VERSION := 15
 RELEASE := 
-
+RCH_BUILD :=$(shell uname -m)
+ifeq (${ARCH_BUILD}, mipsel)
+	mv files/appstore_loongson.json files/appstore.json
+else ifeq (${ARCH_BUILD}, mips64)
+	mv files/appstore_loongson.json files/appstore.json
+else ifeq (${ARCHBUILD}, mips)
+	mv files/appstore_loongson.json files/appstore.json
+endif
 all: build
 
 build:
