@@ -16,6 +16,7 @@ install:
 	install -Dm644 files/language_info.json  ${DESTDIR}/usr/share/i18n/language_info.json
 	install -Dm644 files/desktop-version ${DESTDIR}/usr/lib/deepin/desktop-version
 	install -Dm644 files/lsb-release     ${DESTDIR}/etc/lsb-release
+	install -Dm644 files/appstore.json     ${DESTDIR}/etc/appstore.json
 	install -Dm644 files/deepin-logo.png ${DESTDIR}/usr/share/plymouth/deepin-logo.png
 	install -Dm644 files/desktop.jpg     ${DESTDIR}/usr/share/backgrounds/desktop.jpg
 	[ -e files/systemd.conf ] && install -Dm644 files/systemd.conf ${DESTDIR}/etc/systemd/system.conf.d/deepin-base.conf
