@@ -1,6 +1,6 @@
 VERSION := 15
 RELEASE := 
-RCH_BUILD :=$(shell uname -m)
+ARCH_BUILD :=$(shell uname -m)
 ifeq (${ARCH_BUILD}, mipsel)
 	mv files/appstore_loongson.json files/appstore.json
 else ifeq (${ARCH_BUILD}, mips64)
