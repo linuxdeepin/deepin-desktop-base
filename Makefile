@@ -5,7 +5,7 @@ ifeq (${ARCH_BUILD}, mipsel)
 	mv files/appstore_loongson.json files/appstore.json
 else ifeq (${ARCH_BUILD}, mips64)
 	mv files/appstore_loongson.json files/appstore.json
-else ifeq (${ARCHBUILD}, mips)
+else ifeq (${ARCH_BUILD}, mips)
 	mv files/appstore_loongson.json files/appstore.json
 endif
 all: build
