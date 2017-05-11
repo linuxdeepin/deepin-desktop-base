@@ -4,15 +4,6 @@ set -e
 
 case "${1}" in
 	configure)
-        if [ -e /usr/share/plymouth/debian-logo.png ]
-        then
-            if [ ! -e /usr/share/plymouth/debian-logo.png.bak ]
-            then
-                mv /usr/share/plymouth/debian-logo.png /usr/share/plymouth/debian-logo.png.bak
-            fi
-            cp /usr/share/plymouth/deepin-logo.png /usr/share/plymouth/debian-logo.png
-        fi
-
 	    update-alternatives --install /usr/share/backgrounds/default_background.jpg \
 		    deepin-default-background /usr/share/backgrounds/desktop.jpg 50
 
