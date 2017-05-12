@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 VERSION := 15.4
-=======
-VERSION := 15
->>>>>>> origin/raccoon
 RELEASE := 
 ARCH_BUILD :=$(shell uname -m)
 ifeq (${ARCH_BUILD}, mipsel)
