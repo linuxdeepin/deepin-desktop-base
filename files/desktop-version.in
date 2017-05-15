@@ -1,8 +1,7 @@
 [Release]
 Version=@@VERSION@@
-Type=Professional
-Type[zh_CN]=专业版
-Edition=Y2016E0001
-Copyright=Y2016CR0001
+Type=Desktop
+Type[zh_CN]=桌面版
+
 [Addition]
 Milestone=@@RELEASE@@
