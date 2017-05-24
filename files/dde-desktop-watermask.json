@@ -1,0 +1,20 @@
+{
+    "isMaskAlwaysOn": true,
+    "maskLogoUri" : "/usr/share/deepin/watermark_logo.png",
+    "maskLogoLayoutAlign" : "center",
+    "maskLogoWidth": 150,
+    "maskLogoHeight": 46,
+    "maskText" : "",
+    "maskTextLayoutAlign" : "center",
+    "maskTextColor" : "#04d5f7",
+    "maskTextFontSize": "22px",
+    "maskTextAlign": "center",
+    "maskTextWidth": 0,
+    "maskTextHeight": 0,
+    "maskLogoTextSpacing": 0,
+    "maskWidth": 150,
+    "maskHeight": 46,
+    "xRightBottom": 200,
+    "yRightBottom": 98
+
+}
