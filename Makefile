@@ -1,16 +1,18 @@
 VERSION := 15.4.1
 RELEASE := 
 ARCH_BUILD :=$(shell uname -m)
-ifeq (${ARCH_BUILD}, mipsel)
-	mv files/appstore_loongson.json files/appstore.json
-else ifeq (${ARCH_BUILD}, mips64)
-	mv files/appstore_loongson.json files/appstore.json
-else ifeq (${ARCH_BUILD}, mips)
-	mv files/appstore_loongson.json files/appstore.json
-endif
+
 all: build
 
 build:
+        ifeq (${ARCH_BUILD}, mipsel)
+		cp -v files/appstore_loongson.json files/appstore.json
+        else ifeq (${ARCH_BUILD}, mips64)
+		cp -v files/appstore_loongson.json files/appstore.json
+        else ifeq (${ARCH_BUILD}, mips)
+		cp -v files/appstore_loongson.json files/appstore.json
+        endif
+	
 	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version.in > files/desktop-version
 	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
 	install -Dm755 scripts/postinst debian/postinst
