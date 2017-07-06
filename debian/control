@@ -9,5 +9,5 @@ Package: deepin-desktop-base
 Architecture: all
 Provides: deepin-appstore-config
 Depends: ${misc:Depends}, deepin-keyring, distro-info-data,
- eject, plymouth-theme-deepin-logo, friendly-recovery, deepin-wallpapers, fonts-noto
+ eject, plymouth-theme-deepin-logo, friendly-recovery, deepin-wallpapers, fonts-noto, fonts-symbola
 Description: Base files for Deepin Desktop
