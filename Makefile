@@ -20,7 +20,7 @@ install:
 	install -Dm644 files/appstore.json     ${DESTDIR}/etc/appstore.json
 	install -Dm644 files/deepin-logo.png ${DESTDIR}/usr/share/plymouth/deepin-logo.png
 	install -Dm644 files/desktop.jpg     ${DESTDIR}/usr/share/backgrounds/deepin/desktop.jpg
-	install -Dm644 files/13ada65a5cf7674cb0a68dd1db9cb37c.jpg ${DESTDIR}/var/cache/image-blur/13ada65a5cf7674cb0a68dd1db9cb37c.jpg
+	install -Dm644 files/ea6438293302032889d95108da4018fb.jpg ${DESTDIR}/var/cache/image-blur/ea6438293302032889d95108da4018fb.jpg
 	[ -e files/systemd.conf ] && install -Dm644 files/systemd.conf ${DESTDIR}/etc/systemd/system.conf.d/deepin-base.conf
 	install -Dm644 files/Deepin.info     ${DESTDIR}/usr/share/python-apt/templates/Deepin.info
 	install -Dm644 files/Deepin.mirrors     ${DESTDIR}/usr/share/python-apt/templates/Deepin.mirrors
