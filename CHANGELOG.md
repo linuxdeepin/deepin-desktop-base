@@ -1,3 +1,13 @@
+<a name="2016.13.3"></a>
+### 2016.13.3 (2017-11-13)
+
+
+#### Bug Fixes
+
+*   update /etc/lsb-release ([700c9eaf](https://github.com/linuxdeepin/deepin-desktop-base/commit/700c9eaf3fa1202d7f7233bdedfa88070c8851dd))
+
+
+
 <a name="2016.13.2"></a>
 ### 2016.13.2 (2017-11-09)
 
