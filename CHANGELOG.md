@@ -1,3 +1,13 @@
+<a name="2017.11.1"></a>
+### 2017.11.1 (2017-11-22)
+
+
+#### Features
+
+*   update 15.5 ([0c662a4f](https://github.com/linuxdeepin/deepin-desktop-base/commit/0c662a4fa37e58a902d042d4fc375753ec6bd0f4))
+
+
+
 ### 2016.13.4 (2017-11-20)
 
 *   remove depends friendly-recovery
