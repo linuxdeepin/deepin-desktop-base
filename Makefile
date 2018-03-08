@@ -1,17 +1,17 @@
-VERSION := 15.4.1
+VERSION := 15.5
 RELEASE := 
 ARCH_BUILD :=$(shell uname -m)
 
 all: build
 
 build:
-        ifeq (${ARCH_BUILD}, mipsel)
+	ifeq (${ARCH_BUILD}, mipsel)
 		cp -v files/appstore_loongson.json files/appstore.json
-        else ifeq (${ARCH_BUILD}, mips64)
+	else ifeq (${ARCH_BUILD}, mips64)
 		cp -v files/appstore_loongson.json files/appstore.json
-        else ifeq (${ARCH_BUILD}, mips)
+	else ifeq (${ARCH_BUILD}, mips)
 		cp -v files/appstore_loongson.json files/appstore.json
-        endif
+	endif
 	
 	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version.in > files/desktop-version
 	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
@@ -43,6 +43,7 @@ install:
 	echo "15.3,Unstable,unstable,2016-09-13" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 	echo "15.4,Panda,panda,2017-04-19" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 	echo "15.4.1,Elephant,elephant,2017-07-14" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
+	echo "15.5,Elephant,elephant,2018-03-31" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 clean:
 	rm -f files/desktop-version
 	rm -f files/lsb-release
