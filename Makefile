@@ -5,13 +5,13 @@ ARCH_BUILD :=$(shell uname -m)
 all: build
 
 build:
-	ifeq (${ARCH_BUILD}, mipsel)
+        ifeq (${ARCH_BUILD}, mipsel)
 		cp -v files/appstore_loongson.json files/appstore.json
-	else ifeq (${ARCH_BUILD}, mips64)
+        else ifeq (${ARCH_BUILD}, mips64)
 		cp -v files/appstore_loongson.json files/appstore.json
-	else ifeq (${ARCH_BUILD}, mips)
+        else ifeq (${ARCH_BUILD}, mips)
 		cp -v files/appstore_loongson.json files/appstore.json
-	endif
+        endif
 	
 	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version.in > files/desktop-version
 	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
