@@ -1,6 +1,6 @@
 {
     "isMaskAlwaysOn": true,
-    "maskLogoUri" : "/usr/share/deepin/watermark_logo.png",
+    "maskLogoUri" : "/usr/share/deepin/watermark_logo.svg",
     "maskLogoLayoutAlign" : "center",
     "maskLogoWidth": 150,
     "maskLogoHeight": 46,
