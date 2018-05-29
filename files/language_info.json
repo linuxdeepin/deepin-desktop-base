@@ -19,10 +19,10 @@
 			"CountryCode": ""
 		},
 		{
-			"Locale": "ar_EG.UTF-8",
-			"Description": "عربية",
+			"Locale": "ar_SY.UTF-8",
+			"Description": "العربية",
 			"LangCode": "ar",
-			"CountryCode": "EG"
+			"CountryCode": "SY"
 		},
 		{
 			"Locale": "as_IN",
