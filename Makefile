@@ -1,4 +1,4 @@
-VERSION := 15.6 Beta
+VERSION := 15.6
 RELEASE := 
 
 all: build
