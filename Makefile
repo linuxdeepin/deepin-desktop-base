@@ -29,10 +29,10 @@ install:
 	install -Dm644 files/lsb-release     ${DESTDIR}/etc/lsb-release
 	install -Dm644 files/appstore.json     ${DESTDIR}/etc/appstore.json
 	install -Dm644 files/deepin-logo.png ${DESTDIR}/usr/share/plymouth/deepin-logo.png
-	install -Dm644 files/desktop.jpg     ${DESTDIR}/usr/share/backgrounds/deepin/desktop.jpg
+	#install -Dm644 files/desktop.jpg     ${DESTDIR}/usr/share/backgrounds/deepin/desktop.jpg
 	install -Dm644 files/watermark_logo.svg     ${DESTDIR}/usr/share/deepin/watermark_logo.svg
 	install -Dm644 files/dde-desktop-watermask.json     ${DESTDIR}/usr/share/deepin/dde-desktop-watermask.json
-	install -Dm644 files/eff98ab2b2d91574a79fabd2b79eb7a9.jpg ${DESTDIR}/var/cache/image-blur/eff98ab2b2d91574a79fabd2b79eb7a9.jpg
+	#install -Dm644 files/eff98ab2b2d91574a79fabd2b79eb7a9.jpg ${DESTDIR}/var/cache/image-blur/eff98ab2b2d91574a79fabd2b79eb7a9.jpg
 	[ -e files/systemd.conf ] && install -Dm644 files/systemd.conf ${DESTDIR}/etc/systemd/system.conf.d/deepin-base.conf
 	install -Dm644 files/Deepin.info     ${DESTDIR}/usr/share/python-apt/templates/Deepin.info
 	install -Dm644 files/Deepin.mirrors     ${DESTDIR}/usr/share/python-apt/templates/Deepin.mirrors
@@ -43,6 +43,7 @@ install:
 	echo "15.4,Panda,panda,2017-04-19" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 	echo "15.4.1,Elephant,elephant,2017-07-14" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 	echo "15.5,Elephant,elephant,2018-03-31" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
+	echo "15.5 SP2,Camel,camel,2018-12-31" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 clean:
 	rm -f files/desktop-version
 	rm -f files/lsb-release
