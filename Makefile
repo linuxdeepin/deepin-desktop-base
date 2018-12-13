@@ -21,7 +21,7 @@ install:
 	mkdir -p ${DESTDIR}/usr/share/i18n
 	mkdir -p ${DESTDIR}/usr/share/distro-info
 	mkdir -p ${DESTDIR}/usr/share/python-apt/templates
-	mkdir -p ${DESTDIR}/usr/share/backgrounds/deepin
+	#mkdir -p ${DESTDIR}/usr/share/backgrounds/deepin
 	mkdir -p ${DESTDIR}/usr/share/deepin
 	install -Dm644 files/i18n_dependent.json  ${DESTDIR}/usr/share/i18n/i18n_dependent.json
 	install -Dm644 files/language_info.json  ${DESTDIR}/usr/share/i18n/language_info.json
