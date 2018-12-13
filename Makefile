@@ -1,4 +1,4 @@
-VERSION := 15.5
+VERSION := 15.5 SP2
 RELEASE := 
 ARCH_BUILD :=$(shell uname -m)
 
@@ -14,7 +14,7 @@ build:
         endif
 	
 	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version.in > files/desktop-version
-	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
+	sed -e "s|@@VERSION@@|15.5|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
 
 install:
 	mkdir -p ${DESTDIR}/etc
