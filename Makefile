@@ -1,4 +1,4 @@
-VERSION := 15.8
+VERSION := 15.9
 RELEASE := 
 
 all: build
@@ -32,6 +32,7 @@ install:
 	echo "15.6,Panda,panda,2018-06-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 	echo "15.7,Panda,panda,2018-08-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 	echo "15.8,Panda,panda,2018-11-25" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
+	echo "15.9,Panda,panda,2019-01-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 clean:
 	rm -f files/desktop-version
 	rm -f files/lsb-release
