@@ -1,0 +1,8 @@
+[Release]
+Version=@@VERSION@@
+Type=Professional
+Type[zh_CN]=专业版
+Edition=Y2016E0001
+Copyright=Y2016CR0008
+[Addition]
+Milestone=@@RELEASE@@

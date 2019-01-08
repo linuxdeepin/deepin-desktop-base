@@ -12,8 +12,17 @@ build:
         else ifeq (${ARCH_BUILD}, mips)
 		cp -v files/appstore_loongson.json files/appstore.json
         endif
-	
-	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version.in > files/desktop-version
+        ifeq (${ARCH_BUILD}, x86_64)
+		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version.in > files/desktop-version
+        else ifeq (${ARCH_BUILD}, x86_32)
+		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version.in > files/desktop-version
+        else ifeq (${ARCH_BUILD}, mipsel)
+		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-loongson.in > files/desktop-version
+        else ifeq (${ARCH_BUILD}, mips64)
+		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-loongson.in > files/desktop-version
+        else ifeq (${ARCH_BUILD}, sw_64)
+		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-sw.in > files/desktop-version
+        endif
 	sed -e "s|@@VERSION@@|15.5|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
 
 install:
