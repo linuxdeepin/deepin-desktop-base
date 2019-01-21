@@ -23,6 +23,9 @@ build:
         else ifeq (${ARCH_BUILD}, sw_64)
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-sw.in > files/desktop-version
         endif
+        else ifeq (${ARCH_BUILD}, arm64)
+		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-arm.in > files/desktop-version
+        endif
 	sed -e "s|@@VERSION@@|15.5|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
 
 install:
