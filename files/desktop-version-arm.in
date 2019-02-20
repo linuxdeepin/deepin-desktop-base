@@ -2,7 +2,7 @@
 Version=@@VERSION@@
 Type=Professional
 Type[zh_CN]=专业版
-Edition=Y2019E0001
+Edition=Y2019E0002
 Copyright=Y2019CR0002
 [Addition]
 Milestone=@@RELEASE@@
