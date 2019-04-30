@@ -23,16 +23,16 @@ install:
 	install -Dm644 files/Deepin.info     ${DESTDIR}/usr/share/python-apt/templates/Deepin.info
 	install -Dm644 files/Deepin.mirrors     ${DESTDIR}/usr/share/python-apt/templates/Deepin.mirrors
 	#ln -sf /usr/share/distro-info/debian.csv ${DESTDIR}/usr/share/distro-info/deepin.csv
-	echo "version,codename,series,created,release,eol" > ${DESTDIR}/usr/share/distro-info/deepin.csv
-	echo "15.2,Unstable,unstable,2016-06-01" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	echo "15.3,Unstable,unstable,2016-09-13" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	echo "15.4,Panda,panda,2017-04-19" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	echo "15.4.1,Panda,panda,2017-07-11" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	echo "15.5,Panda,panda,2017-11-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	echo "15.6,Panda,panda,2018-06-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	echo "15.7,Panda,panda,2018-08-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	echo "15.8,Panda,panda,2018-11-25" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	echo "15.9,Panda,panda,2019-01-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
+	#echo "version,codename,series,created,release,eol" > ${DESTDIR}/usr/share/distro-info/deepin.csv
+	#echo "15.2,Unstable,unstable,2016-06-01" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
+	#echo "15.3,Unstable,unstable,2016-09-13" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
+	#echo "15.4,Panda,panda,2017-04-19" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
+	#echo "15.4.1,Panda,panda,2017-07-11" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
+	#echo "15.5,Panda,panda,2017-11-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
+	#echo "15.6,Panda,panda,2018-06-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
+	#echo "15.7,Panda,panda,2018-08-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
+	#echo "15.8,Panda,panda,2018-11-25" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
+	#echo "15.9,Panda,panda,2019-01-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 clean:
 	rm -f files/desktop-version
 	rm -f files/lsb-release
