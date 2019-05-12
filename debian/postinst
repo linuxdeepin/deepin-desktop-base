@@ -11,6 +11,7 @@ echo "15.6,Panda,panda,2018-06-15" >> ${DESTDIR}/usr/share/distro-info/deepin.cs
 echo "15.7,Panda,panda,2018-08-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 echo "15.8,Panda,panda,2018-11-25" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 echo "15.9,Panda,panda,2019-01-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
+echo "15.10,Stable,lion,2019-04-15" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 
 case "${1}" in
 	configure)
