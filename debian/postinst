@@ -8,6 +8,7 @@ echo "15.4,Panda,panda,2017-04-19" >> /usr/share/distro-info/deepin.csv
 echo "15.4.1,Elephant,elephant,2017-07-14" >> /usr/share/distro-info/deepin.csv
 echo "15.5,Elephant,elephant,2018-03-31" >> /usr/share/distro-info/deepin.csv
 echo "15.5 SP2,Camel,camel,2018-12-31" >> /usr/share/distro-info/deepin.csv
+echo "15.5 SP3,Camel,camel,2019-06-07" >> /usr/share/distro-info/deepin.csv
 
 
 case "${1}" in
