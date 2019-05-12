@@ -1,4 +1,4 @@
-VERSION := 15.5 SP2
+VERSION := 15.5 SP3
 RELEASE := 
 ARCH_BUILD :=$(shell uname -m)
 
