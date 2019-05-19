@@ -1,11 +1,13 @@
+DISTRIB := Deepin
+DISCODE := lion
 VERSION := 15.10.1
-RELEASE := 
+RELEASE := stable 
 
 all: build
 
 build:
 	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version.in > files/desktop-version
-	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
+	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" -e "s|@@DISTRIB@@|$(DISTRIB)|g" -e "s|@@DISCODE@@|$(DISCODE)|g" files/lsb-release.in > files/lsb-release
 
 install:
 	mkdir -p ${DESTDIR}/etc
