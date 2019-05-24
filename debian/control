@@ -6,7 +6,7 @@ Standards-Version: 3.9.6
 Build-Depends: debhelper (>= 9)
 
 Package: deepin-desktop-base
-Architecture: all
+Architecture: any
 Provides: deepin-appstore-config
 Depends: ${misc:Depends}, deepin-keyring, distro-info-data,
  eject, plymouth-theme-deepin-logo,  deepin-wallpapers, fonts-noto, fonts-symbola
