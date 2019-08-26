@@ -8,6 +8,15 @@ Build-Depends: debhelper (>= 9)
 Package: deepin-desktop-base
 Architecture: any
 Provides: deepin-appstore-config
+Conflicts: deepin-desktop-server
 Depends: ${misc:Depends}, deepin-keyring, distro-info-data,
- eject,  deepin-wallpapers, fonts-noto, fonts-symbola
+ eject, fonts-noto, fonts-symbola
+Description: Base files for Deepin Desktop
+
+Package: deepin-desktop-server
+Architecture: any
+Provides: deepin-appstore-config
+Conflicts: deepin-desktop-base
+Depends: ${misc:Depends}, deepin-keyring, distro-info-data,
+ eject,  fonts-noto, fonts-symbola
 Description: Base files for Deepin Desktop
