@@ -2,8 +2,8 @@
     "isMaskAlwaysOn": true,
     "maskLogoUri" : "/usr/share/deepin/uos_logo.svg",
     "maskLogoLayoutAlign" : "center",
-    "maskLogoWidth": 150,
-    "maskLogoHeight": 46,
+    "maskLogoWidth": 128,
+    "maskLogoHeight": 48,
     "maskText" : "",
     "maskTextLayoutAlign" : "center",
     "maskTextColor" : "#04d5f7",
@@ -12,9 +12,9 @@
     "maskTextWidth": 0,
     "maskTextHeight": 0,
     "maskLogoTextSpacing": 0,
-    "maskWidth": 150,
-    "maskHeight": 46,
-    "xRightBottom": 200,
+    "maskWidth": 128,
+    "maskHeight": 48,
+    "xRightBottom": 60,
     "yRightBottom": 98
 
 }
