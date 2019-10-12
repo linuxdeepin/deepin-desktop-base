@@ -37,7 +37,7 @@ build:
 		cp files/desktop-version files/desktop-version-server
 		sed -i "s|Type=Professional|Type=Server|g" files/desktop-version-server
         endif
-	sed -e "s|@@VERSION@@|15.5|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
+	sed -e "s|@@VERSION@@|20|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
 
 install:
 	mkdir -p ${DESTDIR}/etc
