@@ -59,14 +59,6 @@ install:
 	[ -e files/systemd.conf ] && install -Dm644 files/systemd.conf ${DESTDIR}/etc/systemd/system.conf.d/deepin-base.conf
 	install -Dm644 files/Deepin.info     ${DESTDIR}/usr/share/python-apt/templates/Deepin.info
 	install -Dm644 files/Deepin.mirrors     ${DESTDIR}/usr/share/python-apt/templates/Deepin.mirrors
-	#ln -sf /usr/share/distro-info/debian.csv ${DESTDIR}/usr/share/distro-info/deepin.csv
-	#echo "version,codename,series,created,release,eol" > ${DESTDIR}/usr/share/distro-info/deepin.csv
-	#echo "15.2,Unstable,unstable,2016-06-01" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	#echo "15.3,Unstable,unstable,2016-09-13" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	#echo "15.4,Panda,panda,2017-04-19" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	#echo "15.4.1,Elephant,elephant,2017-07-14" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	#echo "15.5,Elephant,elephant,2018-03-31" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
-	#echo "15.5 SP2,Camel,camel,2018-12-31" >> ${DESTDIR}/usr/share/distro-info/deepin.csv
 clean:
 	rm -f files/desktop-version
 	rm -f files/lsb-release
