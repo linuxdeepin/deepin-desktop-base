@@ -43,7 +43,11 @@ Manufacturer | 制造商 | 对于硬件制造商 OEM 需求，提供制造商的
 键名 | 含义 | 备注
 ----|----|----
 Name | 发行者名称 | 可本地化
-Logo | 发行者厂商 Logo | 
+Logo | 发行者厂商 Logo | 普通尺寸 Logo，适用于系统设置中的关于等位置
+LogoLight | 发行者厂商 Logo ，小尺寸版本 | 在 DTK 的关于对话框中，会使用此项显示 Logo
+LogoTransparent | 发行者厂商 Logo ，半透明版本 | 可以用于水印或其它需要半透明的场景的 Logo
+Website | 发行者网站 | 站点主页 URL
+WebsiteName | 发行者网站名称 | 呈现给用户的发行者网站显示名称
 
 ### `Manufacturer` 组
 

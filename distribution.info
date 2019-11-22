@@ -1,3 +1,7 @@
 [Distributor]
 Name=UOS
+WebsiteName=www.chinauos.com
+Website=https://www.chinauos.com
 Logo=/usr/share/deepin/distribution/distribution_logo.svg
+LogoLight=/usr/share/deepin/distribution/distribution_logo_light.svg
+LogoTransparent=/usr/share/deepin/distribution/distribution_logo_transparent.svg
