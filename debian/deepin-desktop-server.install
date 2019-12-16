@@ -11,3 +11,4 @@ files/Deepin.info /usr/share/python-apt/templates/
 files/Deepin.mirrors /usr/share/python-apt/templates/
 distribution.info /usr/share/deepin/
 distribution/* /usr/share/deepin/distribution/
+files/dde-session-ui.conf /etc/deepin/
