@@ -14,28 +14,22 @@ build:
         endif
         ifeq (${ARCH_BUILD}, x86_64)
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version.in > files/desktop-version
-		cp files/desktop-version files/desktop-version-server
-		sed -i "s|Type=Professional|Type=Server|g" files/desktop-version-server
+		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-server.in > files/desktop-version-server
         else ifeq (${ARCH_BUILD}, x86_32)
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version.in > files/desktop-version
-		cp files/desktop-version files/desktop-version-server
-		sed -i "s|Type=Professional|Type=Server|g" files/desktop-version-server
+		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-server.in > files/desktop-version-server
         else ifeq (${ARCH_BUILD}, mipsel)
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-loongson.in > files/desktop-version
-		cp files/desktop-version files/desktop-version-server
-		sed -i "s|Type=Professional|Type=Server|g" files/desktop-version-server
+		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-loongson-server.in > files/desktop-version-server
         else ifeq (${ARCH_BUILD}, mips64)
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-loongson.in > files/desktop-version
-		cp files/desktop-version files/desktop-version-server
-		sed -i "s|Type=Professional|Type=Server|g" files/desktop-version-server
+		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-loongson-server.in > files/desktop-version-server
         else ifeq (${ARCH_BUILD}, sw_64)
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-sw.in > files/desktop-version
-		cp files/desktop-version files/desktop-version-server
-		sed -i "s|Type=Professional|Type=Server|g" files/desktop-version-server
+		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-sw-server.in > files/desktop-version-server
         else ifeq (${ARCH_BUILD}, aarch64)
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-arm.in > files/desktop-version
-		cp files/desktop-version files/desktop-version-server
-		sed -i "s|Type=Professional|Type=Server|g" files/desktop-version-server
+		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-arm-server.in > files/desktop-version-server
         endif
 	sed -e "s|@@VERSION@@|20|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
 

@@ -2,8 +2,8 @@
 Version=@@VERSION@@
 Type=Professional
 Type[zh_CN]=专业版
-Edition=Y2016E0001
-Copyright=Y2016CR0001
+Edition=
+Copyright=
 [Addition]
 Milestone=@@RELEASE@@
 Buildid=build1

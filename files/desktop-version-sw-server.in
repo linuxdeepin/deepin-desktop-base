@@ -1,7 +1,7 @@
 [Release]
 Version=@@VERSION@@
-Type=Professional
-Type[zh_CN]=专业版
+Type=Server
+Type[zh_CN]=服务器版
 Edition=
 Copyright=
 [Addition]
