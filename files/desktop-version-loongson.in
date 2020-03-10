@@ -1,7 +1,7 @@
 [Release]
 Version=@@VERSION@@
-Type=Professional
-Type[zh_CN]=专业版
+Type=Personal
+Type[zh_CN]=个人版
 Edition=Y2020E0001
 Copyright=Y2020CR001
 [Addition]
