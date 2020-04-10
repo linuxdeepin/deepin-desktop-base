@@ -59,8 +59,8 @@ WebsiteName | 发行者厂商网站名称 | 呈现给用户的发行者网站显
 
 ```
 [Distributor]
-Name=UOS
-Name[zh_CN]=统一操作系统
+Name=Deepin
+Name[zh_CN]=深度操作系统
 Logo=/usr/share/deepin/distribution/distribution_logo.svg
 
 [Manufacturer]
