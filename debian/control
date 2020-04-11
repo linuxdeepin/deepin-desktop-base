@@ -10,7 +10,7 @@ Architecture: any
 Provides: deepin-appstore-config
 Conflicts: deepin-desktop-server
 Depends: ${misc:Depends}, deepin-keyring, distro-info-data,
- eject, fonts-noto, fonts-symbola, deepin-elf-verify, libpam-deepin-security
+ eject, fonts-noto, fonts-symbola
 Description: Base files for Deepin Desktop
 
 Package: deepin-desktop-server
