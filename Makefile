@@ -1,4 +1,4 @@
-VERSION := 20
+VERSION := 20 Alpha
 RELEASE := 
 ARCH_BUILD :=$(shell uname -m)
 
@@ -48,7 +48,6 @@ install:
 	install -Dm644 files/deepin-logo.png ${DESTDIR}/usr/share/plymouth/deepin-logo.png
 	#install -Dm644 files/desktop.jpg     ${DESTDIR}/usr/share/backgrounds/deepin/desktop.jpg
 	install -Dm644 files/uos_logo.svg     ${DESTDIR}/usr/share/deepin/uos_logo.svg
-	install -Dm644 files/dde-desktop-watermask.json     ${DESTDIR}/usr/share/deepin/dde-desktop-watermask.json
 	#install -Dm644 files/eff98ab2b2d91574a79fabd2b79eb7a9.jpg ${DESTDIR}/var/cache/image-blur/eff98ab2b2d91574a79fabd2b79eb7a9.jpg
 	[ -e files/systemd.conf ] && install -Dm644 files/systemd.conf ${DESTDIR}/etc/systemd/system.conf.d/deepin-base.conf
 	[ -e files/logind.conf ] && install -Dm644 files/logind.conf ${DESTDIR}/etc/systemd/logind.conf.d/deepin-base.conf
