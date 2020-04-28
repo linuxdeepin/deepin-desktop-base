@@ -1,4 +1,4 @@
-VERSION := 20 Alpha
+VERSION := 20 Home
 RELEASE := 
 ARCH_BUILD :=$(shell uname -m)
 
