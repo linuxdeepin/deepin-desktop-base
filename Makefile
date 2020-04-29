@@ -1,4 +1,4 @@
-VERSION := 20 Home
+VERSION := 20 个人版
 RELEASE := 
 ARCH_BUILD :=$(shell uname -m)
 
