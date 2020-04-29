@@ -1,4 +1,4 @@
-VERSION := 20 SP1
+VERSION := 20
 RELEASE := 
 ARCH_BUILD :=$(shell uname -m)
 
