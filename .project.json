@@ -1,6 +1,6 @@
 {
 	"type": "opensource",
-	"3rdparty": ["file/*","debian/*"],
+	"3rdparty": ["file","debian"],
 	"ignore": ["./CHANGELOG.md"],
 	"license": [”GPLv3“]
 }
