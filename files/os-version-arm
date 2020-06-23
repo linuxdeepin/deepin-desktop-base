@@ -1,0 +1,10 @@
+[Version]
+SystemName=Uniontech OS
+SystemName[zh_CN]=统信操作系统
+ProductType=Server
+ProductType[zh_CN]=服务器
+EditionName=Enterprise
+EditionName[zh_CN]=企业版
+MajorVersion=20
+MinorVersion=1020
+OsBuild=12014.101

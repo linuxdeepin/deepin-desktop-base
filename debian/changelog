@@ -1,3 +1,10 @@
+deepin-desktop-base (2016.06.23) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * 
+
+ -- TagBuilder <uos@uos-PC>  Tue, 23 Jun 2020 21:24:04 +0800
+
 deepin-desktop-base (2016.02.01) unstable; urgency=low
 
   * Autobuild Tag 2016.02.01 

@@ -1,0 +1,10 @@
+[UOS-System] 
+product_id=AJAJAA
+product_name=服务器
+instruction_type=ARM64
+version=20
+minor_version=1020
+build_id=101
+system_cn=企业版
+system_en=Enterprise
+server_sum=8da5455636c3e1d2bdd24ff2c176c372
