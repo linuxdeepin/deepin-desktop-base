@@ -1,0 +1,10 @@
+[UOS-System] 
+product_id=AAAJAA
+product_name=桌面
+instruction_type=ARM64
+version=20
+minor_version=1020
+build_id=101
+system_cn=专业版
+system_en=Professional
+server_sum=1eaa959785f18615cd48fc930cf9d8c1

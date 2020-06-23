@@ -1,0 +1,10 @@
+[UOS-System] 
+product_id=AAAEAA
+product_name=桌面
+instruction_type=MIPS64
+version=20
+minor_version=1020
+build_id=101
+system_cn=专业版
+system_en=Professional
+server_sum=5d0961e6899c409ef5461d1fa81ed02c
