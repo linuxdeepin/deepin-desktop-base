@@ -1,4 +1,4 @@
-DISTRIB_ID=UOS Server Enterprise
+DISTRIB_ID=Uniontech OS Server 20 Enterprise
 DISTRIB_RELEASE=@@VERSION@@
-DISTRIB_DESCRIPTION="UOS Server Enterprise @@VERSION@@"
+DISTRIB_DESCRIPTION="Uniontech OS Server 20 Enterprise"
 DISTRIB_CODENAME=fou
