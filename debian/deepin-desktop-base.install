@@ -5,6 +5,7 @@ files/lsb-release /etc/
 files/appstore.json /etc/
 files/deepin-logo.png /usr/share/plymouth/
 files/uos_logo.svg /usr/share/deepin/
+files/dde-desktop-watermask.json /usr/share/deepin/
 files/systemd.conf /etc/systemd/system.conf.d/
 files/logind.conf /etc/systemd/logind.conf.d/
 files/Deepin.info /usr/share/python-apt/templates/
