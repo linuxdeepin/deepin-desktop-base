@@ -1,0 +1,10 @@
+[Version] 
+SystemName=UnionTech OS
+SystemName[zh_CN]=统信操作系统
+ProductType=Desktop
+ProductType[zh_CN]=桌面
+EditionName=Home
+EditionName[zh_CN]=个人版
+MajorVersion=20
+MinorVersion=1020
+OsBuild=11028.101

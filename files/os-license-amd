@@ -1,0 +1,10 @@
+[UOS-System] 
+product_id=AAESAA
+product_name=桌面
+instruction_type=AMD64
+version=20
+minor_version=1020
+build_id=101
+system_cn=个人版
+system_en=Home
+server_sum=efc82bbd2f829a57650222364706ab97

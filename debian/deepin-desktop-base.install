@@ -2,6 +2,8 @@ files/i18n_dependent.json /usr/share/i18n
 files/language_info.json /usr/share/i18n/
 files/desktop-version /usr/lib/deepin/
 files/lsb-release /etc/
+files/os-version /etc/
+files/os-license /var/uos/
 files/appstore.json /etc/
 files/deepin-logo.png /usr/share/plymouth/
 files/uos_logo.svg /usr/share/deepin/
