@@ -1,0 +1,10 @@
+[Version] 
+SystemName=UnionTech OS Device Enterprise
+SystemName[zh_CN]=统信专用设备操作系统
+ProductType=Device
+ProductType[zh_CN]=专用设备
+EditionName=Enterprise
+EditionName[zh_CN]=企业版
+MajorVersion=20
+MinorVersion=1020
+OsBuild=101

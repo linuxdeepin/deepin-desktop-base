@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 9)
 Package: deepin-desktop-base
 Architecture: any
 Provides: deepin-appstore-config
-Conflicts: deepin-desktop-server
+Conflicts: deepin-desktop-server, deepin-desktop-device
 Depends: ${misc:Depends}, deepin-keyring, distro-info-data,
  eject, fonts-noto, fonts-symbola, deepin-elf-verify, libpam-deepin-security
 Description: Base files for Deepin Desktop
@@ -16,7 +16,16 @@ Description: Base files for Deepin Desktop
 Package: deepin-desktop-server
 Architecture: any
 Provides: deepin-appstore-config
-Conflicts: deepin-desktop-base
+Conflicts: deepin-desktop-base, deepin-desktop-device
 Depends: ${misc:Depends}, deepin-keyring, distro-info-data,
  eject,  fonts-noto, fonts-symbola
-Description: Base files for Deepin Desktop
+Description: Base files for Deepin Server
+
+Package: deepin-desktop-device
+Architecture: any
+Priority: standard
+Provides: deepin-appstore-config
+Conflicts: deepin-desktop-server, deepin-desktop-base
+Depends: ${misc:Depends}, deepin-keyring, distro-info-data,
+ eject, fonts-noto, fonts-symbola, deepin-elf-verify, libpam-deepin-security
+Description: Base files for Deepin Device

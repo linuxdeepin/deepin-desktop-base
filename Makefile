@@ -44,6 +44,7 @@ build:
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/os-version-arm > files/os-version
         endif
 	sed -e "s|@@VERSION@@|20|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
+	sed -e "s|@@VERSION@@|20|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/device/lsb-release.in > files/device/lsb-release
 
 install:
 	mkdir -p ${DESTDIR}/etc
