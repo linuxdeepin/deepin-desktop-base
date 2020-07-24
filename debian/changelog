@@ -1,3 +1,9 @@
+deepin-desktop-base (2020.07.24-apricot) UNRELEASED; urgency=medium
+
+  * Autobuild Tag 2020.07.24
+
+ -- TagBuilder <caihouhui@uniontech.com>  Fri, 24 Jul 2020 21:03:57 +0800
+
 deepin-desktop-base (2016.02.01) unstable; urgency=low
 
   * Autobuild Tag 2016.02.01 
