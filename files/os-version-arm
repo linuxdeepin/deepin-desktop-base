@@ -1,4 +1,4 @@
-[Version]
+[Version] 
 SystemName=UnionTech OS Desktop
 SystemName[zh_CN]=统信桌面操作系统
 ProductType=Desktop
@@ -7,4 +7,4 @@ EditionName=Professional
 EditionName[zh_CN]=专业版
 MajorVersion=20
 MinorVersion=1021
-OsBuild=11012.101
+OsBuild=11014.102
