@@ -1,3 +1,10 @@
+deepin-desktop-base (2020.07.30-professional) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * 
+
+ -- TagBuilder <aaa@aaa-PC>  Thu, 30 Jul 2020 20:16:07 +0800
+
 deepin-desktop-base (2020.06.23) unstable; urgency=low
 
   * Autobuild Tag 2016.02.01 
