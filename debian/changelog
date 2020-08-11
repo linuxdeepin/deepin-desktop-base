@@ -1,4 +1,11 @@
-deepin-desktop-base (2020.07.24-apricot) UNRELEASED; urgency=medium
+deepin-desktop-base (2020.08.11-apricot) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Feat: Community Edition integrates apt data collection function
+
+ -- TagBuilder <lichenggang@uniontech.com>  Tue, 11 Aug 2020 15:38:04 +0800
+
+deepin-desktop-base (2020.07.24-apricot) unstable; urgency=medium
 
   * Autobuild Tag 2020.07.24
 
