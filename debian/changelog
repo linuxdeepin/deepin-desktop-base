@@ -1,3 +1,10 @@
+deepin-desktop-base (2020.11.04-apricot) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * update os-version OsBuild=11031.106
+
+ -- TagBuilder <lichenggang@uniontech.com>  Wed, 04 Nov 2020 11:12:45 +0800
+
 deepin-desktop-base (2020.09.09-apricot) unstable; urgency=medium
 
   * update os-version
