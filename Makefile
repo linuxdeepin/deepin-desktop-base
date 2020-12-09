@@ -1,4 +1,4 @@
-VERSION := 20.1 Beta
+VERSION := 20.1
 RELEASE := 
 ARCH_BUILD :=$(shell uname -m)
 
@@ -37,7 +37,7 @@ build:
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version-arm-server.in > files/desktop-version-server
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/os-version-arm > files/os-version
         endif
-	sed -e "s|@@VERSION@@|20|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
+	sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/lsb-release.in > files/lsb-release
 
 install:
 	mkdir -p ${DESTDIR}/etc
