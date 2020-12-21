@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 echo "version,codename,series,created,release,eol" > /usr/share/distro-info/deepin.csv
@@ -13,9 +13,15 @@ case "${1}" in
 		    deepin-version /usr/lib/deepin/desktop-version 50
 	    
 	    if [ -f /var/lib/deepin/developer-mode/enabled ]; then
-        	chattr -i /var/lib/deepin/developer-mode/enabled
-	       	echo -n 1 > /var/lib/deepin/developer-mode/enabled
-		chattr +i /var/lib/deepin/developer-mode/enabled
+	        dev_mode=$(cat /var/lib/deepin/developer-mode/enabled)
+                if [ $dev_mode == 1 ]; then
+                        echo "developer mode turned on" 
+                else
+                        chattr -i /var/lib/deepin/developer-mode/enabled
+                        echo -n 1 > /var/lib/deepin/developer-mode/enabled
+                        chattr +i /var/lib/deepin/developer-mode/enabled
+                fi
+
 	    else
 	    	mkdir -p /var/lib/deepin/developer-mode
     		echo -n 1 > /var/lib/deepin/developer-mode/enabled
