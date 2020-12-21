@@ -11,7 +11,17 @@ case "${1}" in
 	configure)
 	    update-alternatives --install /etc/deepin-version \
 		    deepin-version /usr/lib/deepin/desktop-version 50
-
+	    
+	    if [ -f /var/lib/deepin/developer-mode/enabled ]; then
+        	chattr -i /var/lib/deepin/developer-mode/enabled
+	       	echo -n 1 > /var/lib/deepin/developer-mode/enabled
+		chattr +i /var/lib/deepin/developer-mode/enabled
+	    else
+	    	mkdir -p /var/lib/deepin/developer-mode
+    		echo -n 1 > /var/lib/deepin/developer-mode/enabled
+		chattr +i /var/lib/deepin/developer-mode/enabled		
+	    fi
+	    
 	    if [ -x /usr/sbin/update-initramfs ]
 	    then
 		    update-initramfs -u
