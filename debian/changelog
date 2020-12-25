@@ -1,3 +1,9 @@
+deepin-desktop-base (2020.12.25-apricot) unstable; urgency=medium
+
+  * go back postinst.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Fri, 25 Dec 2020 09:34:44 +0800
+
 deepin-desktop-base (2020.12.24-apricot) unstable; urgency=medium
 
   * cancel chattr +i operating.

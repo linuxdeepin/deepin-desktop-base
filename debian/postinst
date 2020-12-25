@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e
 echo "version,codename,series,created,release,eol" > /usr/share/distro-info/deepin.csv
@@ -11,27 +11,7 @@ case "${1}" in
 	configure)
 	    update-alternatives --install /etc/deepin-version \
 		    deepin-version /usr/lib/deepin/desktop-version 50
-	    
-	    if [ -f /var/lib/deepin/developer-mode/enabled ]; then
-	        dev_mode=$(cat /var/lib/deepin/developer-mode/enabled)
-                if [ $dev_mode == 1 ]; then
-                        echo "developer mode turned on" 
-                else
-			fileinfo=`lsattr /var/lib/deepin/developer-mode/enabled`
-			fileinfo2=$(echo $fileinfo | grep "i")
-			if [ "$fileinfo2" != "" ];then
-				chattr -i  /var/lib/deepin/developer-mode/enabled
-                        	echo -n 1 > /var/lib/deepin/developer-mode/enabled
-			else
-				echo -n 1 > /var/lib/deepin/developer-mode/enabled
-			fi
-                fi
 
-	    else
-	    	mkdir -p /var/lib/deepin/developer-mode
-    		echo -n 1 > /var/lib/deepin/developer-mode/enabled
-	    fi
-	    
 	    if [ -x /usr/sbin/update-initramfs ]
 	    then
 		    update-initramfs -u
