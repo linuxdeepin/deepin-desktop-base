@@ -5,6 +5,6 @@ ProductType=Desktop
 ProductType[zh_CN]=桌面
 EditionName=Community
 EditionName[zh_CN]=社区版
-MajorVersion=20.2
+MajorVersion=20.2.1
 MinorVersion=1040
 OsBuild=11038.002
