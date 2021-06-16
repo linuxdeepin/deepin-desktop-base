@@ -1,3 +1,9 @@
+deepin-desktop-base (2021.6.16-apricot) unstable; urgency=medium
+
+  * update os-version 20.2.2.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Wed, 16 Jun 2021 15:20:41 +0800
+
 deepin-desktop-base (2021.5.07-apricot) unstable; urgency=medium
 
   * update os-version.
