@@ -1,3 +1,9 @@
+deepin-desktop-base (2021.9.07-apricot) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+ -- LiChengGang <lichenggang@uniontech.com>  Tue, 07 Sep 2021 15:59:32 +0800
+
 deepin-desktop-base (2021.8.02-apricot) unstable; urgency=medium
 
   * update os-version 20.2.3.
