@@ -1,3 +1,9 @@
+deepin-desktop-base (2021.11.01-apricot) unstable; urgency=medium
+
+  * update os-version 20.2.5 
+
+ -- LiChengGang <lichenggang@uniontech.com>  Mon, 01 Nov 2021 14:35:26 +0800
+
 deepin-desktop-base (2021.9.08-apricot) unstable; urgency=medium
 
   * update os-version 20.2.4 
