@@ -15,7 +15,7 @@ build:
         ifeq (${ARCH_BUILD}, x86_64)
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version.in > files/desktop-version
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/os-version-amd > files/os-version
-        else ifeq (${ARCH_BUILD}, x86_32)
+        else ifeq (${ARCH_BUILD}, i686)
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/desktop-version.in > files/desktop-version
 		sed -e "s|@@VERSION@@|$(VERSION)|g" -e "s|@@RELEASE@@|$(RELEASE)|g" files/os-version-amd > files/os-version
         else ifeq (${ARCH_BUILD}, mipsel)
