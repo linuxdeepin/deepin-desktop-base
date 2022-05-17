@@ -1,3 +1,9 @@
+deepin-desktop-base (2022.05.17-apricot) unstable; urgency=medium
+
+  * update os-version 20.6 
+
+ -- LiChengGang <lichenggang@uniontech.com>  Tue, 17 May 2022 10:34:58 +0800
+
 deepin-desktop-base (2022.03.07-apricot) unstable; urgency=medium
 
   * update os-version 20.5 
