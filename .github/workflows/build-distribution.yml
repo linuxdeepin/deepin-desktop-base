@@ -1,0 +1,221 @@
+name: Distribution Builder
+on:
+  workflow_call:
+    secrets:
+      BUILD_GPG_PRIVATE_KEY:
+        required: true
+      BUILD_SSH_PRIVATE_KEY:
+        required: true
+      WEBDAV_PASSWD:
+        required: true
+      WEBDAV_USER:
+        required: true
+env:
+  BUILD_GPG_PRIVATE_KEY: ${{ secrets.BUILD_GPG_PRIVATE_KEY }}
+  BUILD_SSH_PRIVATE_KEY: ${{ secrets.BUILD_SSH_PRIVATE_KEY }}
+  WEBDAV_PASSWD: ${{ secrets.WEBDAV_PASSWD }}
+  WEBDAV_USER: ${{ secrets.WEBDAV_USER }}
+jobs:
+  Arch:
+    container:
+      image: archlinux:latest
+      options: --privileged
+      volumes:
+        - /sys/fs/cgroup:/sys/fs/cgroup
+        - /etc/machine-id:/etc/machine-id
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        if: ${{ github.event_name == 'pull_request' }}
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/checkout@v3
+        if: ${{ github.event_name == 'push' }}
+      - name: Init
+        run: |
+          pacman-key --init
+          pacman-key --populate
+          pacman-key -r AFAAFC4EF142770966FC4C805987B0C2A80EA669
+          pacman-key --lsign-key AFAAFC4EF142770966FC4C805987B0C2A80EA669
+          echo "[deepin]" >> /etc/pacman.conf
+          echo "Server = https://packages.mkacg.com/arch/\$repo/os/\$arch" >> /etc/pacman.conf
+          pacman -Sy openssh davfs2 deepin-keyring devtools-deepin-git base-devel --noconfirm --noprogressbar --needed
+      - name: Import GPG key
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v4
+        with:
+          gpg_private_key: ${{ BUILD_GPG_PRIVATE_KEY }}
+      - uses: webfactory/ssh-agent@v0.5.4
+        name: Import SSH key
+        with:
+          ssh-private-key: ${{ BUILD_SSH_PRIVATE_KEY }}
+      - run: git config --global user.email "justforlxz@gmail.com"
+      - run: git config --global user.name "justforlxz"
+      - name: Build
+        run: |
+          sha=${{ github.GITHUB_SHA }}
+          name=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')
+          git clone https://github.com/deepin-community/repo .repo
+          sed -i "s|MAKEFLAGS=.*|MAKEFLAGS=-j$(nproc)|" /etc/makepkg.conf
+          useradd -m user
+          cd .repo/deepincn/git/
+          for p in `ls`;
+          do
+            cd $p
+            u=$(source $PWD/PKGBUILD && echo $url | awk -F/ '{print $NF}')
+            if [[ "x$name" -eq "x$u" ]];
+            then
+              cp -r . /home/user/
+              chown -R user /home/user/*
+              cd /home/user/
+              deepin-x86_64-build -- -U user
+              break
+            fi
+            cd ..
+          done
+      - name: Archive build results
+        if: ${{ github.event_name == 'push' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: archlinux package files
+          path: LICENSE
+      - name: Mount webdav
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          echo "https://webdav.mkacg.com ${{ WEBDAV_USER }} ${{ WEBDAV_PASSWD }}" >> /etc/davfs2/secrets
+          echo "use_locks 0" >> /etc/davfs2/davfs2.conf
+          mkdir repo
+          mount -t davfs https://webdav.mkacg.com/ repo
+      - name: Lock Database
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          for (( ; ; ))
+          do
+            git clone git@github.com:deepin-community/push-sleep.git
+            cd push-sleep
+            git checkout arch
+            if [[ -f "lock" ]];
+            then
+              sleep 60
+              rm -rf push-sleep
+              continue
+            else
+              touch lock
+              git add lock
+              git commit -m "lock arch"
+              for (( ; ; ))
+              do
+                git push && break
+                sleep 60
+              done
+            fi
+            break
+          done
+      - name: Upload packages
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          mkdir pkgs
+          find /home/user -name "*.zst" | xargs -I {} cp {} pkgs/
+          gpg --detach-sign --default-key builder pkgs/*.zst
+          cp pkgs/* repo/arch/deepin/os/x86_64/
+          for p in `ls pkgs/*.zst`;
+          do
+            pkg=$(echo $p | awk -F. '{print $1}' | sed 's/-1//')
+            repo-add -p -R repo/arch/deepin/os/x86_64/deepin.db.tar.xz $p
+          done
+      - name: Unmount webdav
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          umount -i -f -l repo
+      - name: Unlock
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          cd push-sleep
+          git reset HEAD^
+          rm -rf lock
+          git push -f
+  Debian:
+    container:
+      image: debian:testing
+      options: --privileged
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        if: ${{ github.event_name == 'pull_request' }}
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/checkout@v3
+        if: ${{ github.event_name == 'push' }}
+      - name: Init
+        run: |
+          echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+          apt-get update
+          apt-get install ca-certificates procps devscripts reprepro davfs2 -y
+          echo "deb [trusted=yes] https://packages.mkacg.com/debian commit main" > /etc/apt/sources.list.d/commit.list
+          apt-get update
+      - uses: webfactory/ssh-agent@v0.5.4
+        name: Import SSH key
+        with:
+          ssh-private-key: ${{ BUILD_SSH_PRIVATE_KEY }}
+      - run: git config --global user.email "justforlxz@gmail.com"
+      - run: git config --global user.name "justforlxz"
+      - name: Build
+        run: |
+          mk-build-deps -i
+          debuild -b -us -uc
+      - name: Lock Database
+        if: ${{ github.event_name == 'push' }}
+        shell: bash
+        run: |
+          for (( ; ; ))
+          do
+            git clone git@github.com:deepin-community/push-sleep.git
+            cd push-sleep
+            git checkout debian
+            if [[ -f "lock" ]];
+            then
+              sleep 60
+              rm -rf push-sleep
+              continue
+            else
+              touch lock
+              git add lock
+              git commit -m "lock debian"
+              for (( ; ; ))
+              do
+                git push && break
+                sleep 60
+              done
+            fi
+            break
+          done
+      - name: Archive build results
+        if: ${{ github.event_name == 'push' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: debian package files
+          path: dist/*.deb
+      - name: Mount webdav
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          echo "https://webdav.mkacg.com ${{ WEBDAV_USER }} ${{ WEBDAV_PASSWD }}" >> /etc/davfs2/secrets
+          echo "use_locks 0" >> /etc/davfs2/davfs2.conf
+          mkdir repo
+          mount -t davfs https://webdav.mkacg.com/ repo
+      - name: Upload packages
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          cd repo/debian
+          reprepro -C main includedeb commit ../../../*.deb
+          #reprepro -C main includedsc commit ../../../*.dsc
+      - name: Unmount webdav
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          umount -i -f -l repo
+      - name: Unlock
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          cd push-sleep
+          git reset HEAD^
+          rm -rf lock
+          git push -f
