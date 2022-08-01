@@ -1,3 +1,206 @@
+deepin-desktop-base (2022.07.26-apricot) unstable; urgency=medium
+
+  * update  
+
+ -- LiChengGang <lichenggang@uniontech.com>  Tue, 26 Jul 2022 19:55:26 +0800
+
+deepin-desktop-base (2022.06.29-apricot) unstable; urgency=medium
+
+  * update 
+
+ -- LiChengGang <lichenggang@uniontech.com>  Wed, 29 Jun 2022 16:06:49 +0800
+
+deepin-desktop-base (2022.06.28-apricot) unstable; urgency=medium
+
+   * update 
+
+ -- LiChengGang <lichenggang@uniontech.com>  Tue, 28 Jun 2022 09:57:23 +0800
+
+deepin-desktop-base (2022.06.15-apricot) unstable; urgency=medium
+
+   * update 
+
+ -- LiChengGang <lichenggang@uniontech.com>  Wed, 15 Jun 2022 19:24:57 +0800
+
+deepin-desktop-base (2022.06.13-apricot) unstable; urgency=medium
+
+  * update 
+
+ -- LiChengGang <lichenggang@uniontech.com>  Mon, 13 Jun 2022 19:31:25 +0800
+
+deepin-desktop-base (2022.05.17-apricot) unstable; urgency=medium
+
+  * update os-version 20.6 
+
+ -- LiChengGang <lichenggang@uniontech.com>  Tue, 17 May 2022 10:34:58 +0800
+
+deepin-desktop-base (2022.03.07-apricot) unstable; urgency=medium
+
+  * update os-version 20.5 
+
+ -- LiChengGang <lichenggang@uniontech.com>  Mon, 07 Mar 2022 09:12:39 +0800
+
+deepin-desktop-base (2021.12.29-apricot) unstable; urgency=medium
+  
+  * update os-version 20.4
+
+ -- LiChengGang <lichenggang@uniontech.com>  Wed, 29 Dec 2021 20:58:34 +0800
+
+deepin-desktop-base (2021.11.08-apricot) unstable; urgency=medium
+
+  * update os-version 20.3 
+
+ -- LiChengGang <lichenggang@uniontech.com>  Wed, 29 Dec 2021 20:58:34 +0800
+
+deepin-desktop-base (2021.11.01-apricot) unstable; urgency=medium
+
+  * update os-version 20.2.5 
+
+ -- LiChengGang <lichenggang@uniontech.com>  Mon, 01 Nov 2021 14:35:26 +0800
+
+deepin-desktop-base (2021.9.08-apricot) unstable; urgency=medium
+
+  * update os-version 20.2.4 
+
+ -- LiChengGang <lichenggang@uniontech.com>  Wed, 08 Sep 2021 19:17:08 +0800
+
+deepin-desktop-base (2021.9.07-apricot) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+ -- LiChengGang <lichenggang@uniontech.com>  Tue, 07 Sep 2021 15:59:32 +0800
+
+deepin-desktop-base (2021.8.02-apricot) unstable; urgency=medium
+
+  * update os-version 20.2.3.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Mon, 02 Aug 2021 14:17:07 +0800
+
+deepin-desktop-base (2021.6.16-apricot) unstable; urgency=medium
+
+  * update os-version 20.2.2.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Wed, 16 Jun 2021 15:20:41 +0800
+
+deepin-desktop-base (2021.5.07-apricot) unstable; urgency=medium
+
+  * update os-version.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Fri, 07 May 2021 13:46:37 +0800
+
+deepin-desktop-base (2021.5.06-apricot) unstable; urgency=medium
+
+  * update os-version 20.2.1.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Thu, 06 May 2021 09:35:25 +0800
+
+deepin-desktop-base (2021.4.19-apricot) unstable; urgency=medium
+
+  * update os-version 11038.002.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Mon, 19 Apr 2021 14:30:49 +0800
+
+deepin-desktop-base (2021.3.10-apricot) unstable; urgency=medium
+
+  * update os-version 1040.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Wed, 10 Mar 2021 16:13:17 +0800
+
+deepin-desktop-base (2021.3.04-apricot) unstable; urgency=medium
+
+  * update os-version 20.2.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Thu, 04 Mar 2021 15:07:26 +0800
+
+deepin-desktop-base (2021.2.20-apricot) unstable; urgency=medium
+
+  * update osbuild 11038.003.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Sat, 20 Feb 2021 09:35:13 +0800
+
+deepin-desktop-base (2021.1.29-apricot) unstable; urgency=medium
+
+  * update osbuild 11038.002.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Fri, 29 Jan 2021 17:24:08 +0800
+
+deepin-desktop-base (2021.1.25-apricot) unstable; urgency=medium
+
+  * update osbuild 002.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Mon, 25 Jan 2021 09:23:15 +0800
+
+deepin-desktop-base (2021.1.12-apriocot) unstable; urgency=medium
+
+  * update os-version.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Tue, 12 Jan 2021 18:06:49 +0800
+
+deepin-desktop-base (2021.1.11-apricot) unstable; urgency=medium
+
+  * update os-version.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Mon, 11 Jan 2021 17:32:39 +0800
+
+deepin-desktop-base (2020.12.25-apricot) unstable; urgency=medium
+
+  * go back postinst.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Fri, 25 Dec 2020 09:34:44 +0800
+
+deepin-desktop-base (2020.12.24-apricot) unstable; urgency=medium
+
+  * cancel chattr +i operating.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Thu, 24 Dec 2020 10:00:19 +0800
+
+deepin-desktop-base (2020.12.21-apricot) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * 
+
+ -- TagBuilder <lichenggang@uniontech.com>  Mon, 21 Dec 2020 13:13:11 +0800
+
+deepin-desktop-base (2020.12.09-apricot) unstable; urgency=medium
+
+  * update os-version 20.1.
+
+ -- TagBuilder <lichenggang@uniontech.com>  Wed, 09 Dec 2020 16:16:32 +0800
+
+deepin-desktop-base (2020.12.03-apricot) unstable; urgency=medium
+
+  * update os-version 20.1 Beta.
+   
+
+ -- TagBuilder <lichenggang@uniontech.com>  Thu, 03 Dec 2020 19:28:50 +0800
+
+deepin-desktop-base (2020.11.04-apricot) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * update os-version OsBuild=11031.106
+
+ -- TagBuilder <lichenggang@uniontech.com>  Wed, 04 Nov 2020 11:12:45 +0800
+
+deepin-desktop-base (2020.09.09-apricot) unstable; urgency=medium
+
+  * update os-version
+  * 
+
+ -- TagBuilder <lichenggang@uniontech.com>  Wed, 09 Sep 2020 13:24:04 +0800
+
+deepin-desktop-base (2020.08.11-apricot) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Feat: Community Edition integrates apt data collection function
+
+ -- TagBuilder <lichenggang@uniontech.com>  Tue, 11 Aug 2020 15:38:04 +0800
+
+deepin-desktop-base (2020.07.24-apricot) unstable; urgency=medium
+
+  * Autobuild Tag 2020.07.24
+
+ -- TagBuilder <caihouhui@uniontech.com>  Fri, 24 Jul 2020 21:03:57 +0800
+
 deepin-desktop-base (2016.02.01) unstable; urgency=low
 
   * Autobuild Tag 2016.02.01 

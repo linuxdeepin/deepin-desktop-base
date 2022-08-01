@@ -1,9 +1,9 @@
 [Release]
 Version=@@VERSION@@
-Type=Desktop
-Type[zh_CN]=社区版
-Edition=Y2020E0001
-Copyright=Y2020CR001
+Type=Server
+Type[zh_CN]=服务器版
+Edition=Y2020E0002
+Copyright=Y2020CR002
 [Addition]
 Milestone=@@RELEASE@@
 Buildid=build1

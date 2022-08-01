@@ -1,0 +1,10 @@
+[Version] 
+SystemName=deepin
+SystemName[zh_CN]=深度操作系统
+ProductType=Desktop
+ProductType[zh_CN]=桌面
+EditionName=Community
+EditionName[zh_CN]=社区版
+MajorVersion=20.1
+MinorVersion=1030
+OsBuild=11031.002
