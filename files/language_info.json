@@ -68,9 +68,9 @@
 		},
 		{
 			"Locale": "bo_CN",
-			"Description": "বাংলা",
+			"Description": "བོད་སྐད།",
 			"LangCode": "bo",
-			"CountryCode": ""
+			"CountryCode": "CN"
 		},
 		{
 			"Locale": "br_FR.UTF-8",
