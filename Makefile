@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2022 UnionTech Software Technology Co., Ltd.
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 VERSION := 20.7
 RELEASE :=
 ARCH_BUILD :=$(shell uname -m)
