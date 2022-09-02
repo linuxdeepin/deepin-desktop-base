@@ -3,12 +3,6 @@ Upstream-Name: deepin-desktop-base
 Upstream-Contact: UnionTech Software Technology Co., Ltd.  <>
 Source: https://github.com/linuxdeepin/deepin-desktop-base
 
-# Sample paragraph, commented out:
-#
-# Files: src/*
-# Copyright: $YEAR $NAME <$CONTACT>
-# License: ...
-
 # ci
 Files: .github/* .gitlab-ci.yml
 Copyright: None
