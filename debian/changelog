@@ -1,3 +1,9 @@
+deepin-desktop-base (2022.11.15-deepin) unstable; urgency=medium
+
+  * release 20.8.
+
+ -- LiChengGang <lichenggang@uniontech.com>  Tue, 15 Nov 2022 13:23:49 +0800
+
 deepin-desktop-base (2022.09.19-deepin) unstable; urgency=medium
 
   * 20.7.1 released.
