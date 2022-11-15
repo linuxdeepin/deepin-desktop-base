@@ -1,4 +1,4 @@
-VERSION := 20.7.1
+VERSION := 20.8
 RELEASE :=
 ARCH_BUILD :=$(shell uname -m)
 
