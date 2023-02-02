@@ -2,22 +2,8 @@
 
 ## Installation
 
-### Build from source code
+### Install from source code
 
-1. Make sure you have installed all dependencies.
-````
-sudo apt build-dep .
-````
-2. Build:
-
-````
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make
-````
-
-3. Install:
 ````
 $ sudo make install
 ````
