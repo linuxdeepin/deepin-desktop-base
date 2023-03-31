@@ -2,11 +2,14 @@ Source: deepin-desktop-base
 Section: misc
 Priority: optional
 Maintainer: Deepin Sysdev <sysdev@deepin.com>
-Standards-Version: 3.9.6
-Build-Depends: debhelper (>= 9)
+Standards-Version: 4.5.1
+Build-Depends: debhelper-compat (= 12)
 
 Package: deepin-desktop-base
-Architecture: all
+Architecture: any
 Provides: deepin-appstore-config
+Conflicts: deepin-desktop-server
 Depends: ${misc:Depends}, deepin-keyring, distro-info-data,
-Description: Base files for Deepin Desktop
+ eject, fonts-noto, fonts-symbola
+Description: The basic file of Deepin Desktop, 
+ provides system attribute description for DDE components
