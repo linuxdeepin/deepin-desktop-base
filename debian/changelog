@@ -1,3 +1,9 @@
+deepin-desktop-base (2023.04.19-deepin) unstable; urgency=medium
+
+  * update os-version.
+
+ -- LiChengGang <lichenggang@uniontech.com>  Wed, 19 Apr 2023 10:58:11 +0800
+
 deepin-desktop-base (2023.01.16-deepin) unstable; urgency=medium
 
   * fix OS Version.
