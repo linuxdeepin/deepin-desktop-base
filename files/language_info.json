@@ -842,13 +842,13 @@
 		},
 		{
 			"Locale": "zh_HK.UTF-8",
-			"Description": "繁體中文(香港)",
+			"Description": "繁體中文（中國香港）",
 			"LangCode": "zh-hant",
 			"CountryCode": "HK"
 		},
 		{
 			"Locale": "zh_TW.UTF-8",
-			"Description": "正體中文",
+			"Description": "繁體中文（中國臺灣）",
 			"LangCode": "zh-hant",
 			"CountryCode": "TW"
 		},
