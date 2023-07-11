@@ -17,7 +17,7 @@ makedepends=('git')
 source=("${sourcetars[@]}"
         distribution.info)
 sha512sums=('SKIP'
-            '27625e6d0786b8adacdb7c52806d4faa28d2ab6b319a593b3ea9bcb69f0cc18ea19b258d629e3a0069ef9a69503589b0285289caef39a1e85bbd99e915c7cd7d')
+            'd0609a457c14b57070a8baa179bd3f514f6e16e6d6452e106e7095b45f8fad6ce03411420926e96d2d8f76c2d71d82bc19f87f4e0033557dc6f762b502722bb4')
 
 prepare() {
     cd $sourcedir
