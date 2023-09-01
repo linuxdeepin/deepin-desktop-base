@@ -2,25 +2,10 @@
 
 ## 安装
 
-### 从源代码构建
-
-1. 确保已经安装了所有的编译依赖.                                                                  
-````
-sudo apt build-dep .
-````
-2. 构建:
+### 从源代码安装
 
 ````
-mkdir build
-cd build
-cmake ..
-make
-````
-
-3. 安装:
-
-````
-sudo make install
+$ sudo make install
 ````
 
 ## 帮助
