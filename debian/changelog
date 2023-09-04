@@ -1,3 +1,9 @@
+deepin-desktop-base (2023.09.04-deepin) unstable; urgency=medium
+
+  * update Beta2 version.
+
+ -- LiChengGang <lichenggang@uniontech.com>  Mon, 04 Sep 2023 15:54:27 +0800
+
 deepin-desktop-base (2023.05.06-deepin) unstable; urgency=medium
 
   * 修改繁体中文名称
