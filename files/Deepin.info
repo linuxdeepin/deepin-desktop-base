@@ -1,6 +1,6 @@
 Suite: unstable
 RepositoryType: deb
-BaseURI: http://packages.deepin.com/deepin/
+BaseURI: https://packages.deepin.com/deepin/
 MatchURI: \.deepin\.com
 MirrorsFile: Deepin.mirrors
 Description: Deepin 'unstable'
