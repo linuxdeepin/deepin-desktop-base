@@ -1,3 +1,9 @@
+deepin-desktop-base (2024.01.03) unstable; urgency=medium
+
+  * add loong64 support
+
+ -- Chang Yang <yangchang@deepin.org>  Wed, 03 Jan 2024 10:14:45 +0800
+
 deepin-desktop-base (2023.12.27) unstable; urgency=medium
 
   * update Beta3 version
