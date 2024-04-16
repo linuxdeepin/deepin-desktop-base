@@ -1,3 +1,9 @@
+deepin-desktop-base (2024.04.16) unstable; urgency=medium
+
+  * update v23 RC version.
+
+ -- LiChengGang <lichenggang@uniontech.com>  Tue, 16 Apr 2024 17:38:43 +0800
+
 deepin-desktop-base (2024.01.03) unstable; urgency=medium
 
   * add loong64 support
