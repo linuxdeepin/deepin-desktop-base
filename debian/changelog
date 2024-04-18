@@ -1,3 +1,9 @@
+deepin-desktop-base (2024.04.18) unstable; urgency=medium
+
+  * update loong64 arm64 riscv64, System ID.
+
+ -- LiChengGang <lichenggang@uniontech.com>  Thu, 18 Apr 2024 18:50:12 +0800
+
 deepin-desktop-base (2024.04.16) unstable; urgency=medium
 
   * update v23 RC version.
