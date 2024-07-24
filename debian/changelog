@@ -1,3 +1,15 @@
+deepin-desktop-base (2024.07.24) unstable; urgency=medium
+
+  * add deepin-version.
+
+ -- LiChengGang <lichenggang@uniontech.com>  Wed, 24 Jul 2024 14:15:05 +0800
+
+deepin-desktop-base (2024.05.32) unstable; urgency=medium
+
+  * update v23 Release.
+
+ -- LiChengGang <lichenggang@uniontech.com>  Fri, 19 Jul 2024 17:04:36 +0800
+
 deepin-desktop-base (2024.05.31) unstable; urgency=medium
 
   * update amd64, System ID RC2.
