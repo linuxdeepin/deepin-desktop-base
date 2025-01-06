@@ -1,3 +1,15 @@
+deepin-desktop-base (2025.01.06) unstable; urgency=medium
+
+  * update os-version.
+
+ -- lichenggang <lichenggang@deepin.org>  Mon, 06 Jan 2025 13:48:41 +0800
+
+deepin-desktop-base (2024.10.28) unstable; urgency=medium
+
+  * updatge v25 Release.
+
+ -- lichenggang <lichenggang@deepin.org>  Mon, 28 Oct 2024 13:20:08 +0800
+
 deepin-desktop-base (2024.07.24) unstable; urgency=medium
 
   * add deepin-version.
