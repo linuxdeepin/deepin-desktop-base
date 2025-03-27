@@ -1,3 +1,9 @@
+deepin-desktop-base (2024.07.25) unstable; urgency=medium
+
+  * update 23.1 os-version.
+
+ -- lichenggang <lichenggang@deepin.org>  Thu, 27 Mar 2025 13:09:46 +0800
+
 deepin-desktop-base (2024.07.24) unstable; urgency=medium
 
   * add deepin-version.
