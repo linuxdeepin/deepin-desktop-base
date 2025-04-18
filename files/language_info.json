@@ -857,6 +857,24 @@
 			"Description": "isiZulu",
 			"LangCode": "zu",
 			"CountryCode": ""
-		}
+		},
+		{
+			"Locale": "kab_DZ.UTF-8",
+			"Description": "Kabyle",
+			"LangCode": "kab",
+			"CountryCode": "DZ"
+		},
+		{
+			"Locale": "az_AZ.UTF-8",
+			"Description": "Azerbaijani",
+			"LangCode": "az",
+			"CountryCode": "AZ"
+		},		
+		{
+			"Locale": "fil_PH.UTF-8",
+			"Description": "Filipino",
+			"LangCode": "fil",
+			"CountryCode": "PH"
+		}				
 	]
 }
