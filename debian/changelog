@@ -1,3 +1,9 @@
+deepin-desktop-base (2025.03.06) unstable; urgency=medium
+
+  * update os-version Alpha.
+
+ -- lichenggang <lichenggang@deepin.org>  Tue, 22 Apr 2025 10:08:47 +0800
+
 deepin-desktop-base (2025.03.05) unstable; urgency=medium
 
   * add Kabyle Azerbaijani  Filipino.
