@@ -1,3 +1,9 @@
+deepin-desktop-base (2025.07.15) unstable; urgency=medium
+
+  * update os-version: osbuild.
+
+ -- lichenggang <lichenggang@deepin.org>  Tue, 15 Jul 2025 10:18:34 +0800
+
 deepin-desktop-base (2025.07.02) unstable; urgency=medium
 
   * update osbuild.
