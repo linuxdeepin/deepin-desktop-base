@@ -1,3 +1,9 @@
+deepin-desktop-base (2025.11.19) unstable; urgency=medium
+
+  * update OsBuild
+
+ -- lichenggang <lichenggang@deepin.org>  Wed, 19 Nov 2025 16:43:32 +0800
+
 deepin-desktop-base (2025.10.22) unstable; urgency=medium
 
   * update 25.0.9
