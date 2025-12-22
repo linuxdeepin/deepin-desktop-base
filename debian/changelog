@@ -1,3 +1,9 @@
+deepin-desktop-base (2025.12.22) unstable; urgency=medium
+
+  * update 25.0.11.
+
+ -- lichenggang <lichenggang@deepin.org>  Mon, 22 Dec 2025 11:21:50 +0800
+
 deepin-desktop-base (2025.11.25) unstable; urgency=medium
 
   * update 25.0.10.

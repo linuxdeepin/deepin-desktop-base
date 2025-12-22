@@ -7,5 +7,5 @@ EditionName=Community
 EditionName[en_US]=Community
 EditionName[zh_CN]=社区版
 MajorVersion=25
-MinorVersion=25.0.10
-OsBuild=21134.105.100
+MinorVersion=25.0.11
+OsBuild=21134.106.100
