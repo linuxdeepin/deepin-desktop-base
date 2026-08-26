@@ -25,6 +25,12 @@
 			"CountryCode": "EG"
 		},
 		{
+			"Locale": "ar_OM",
+			"Description": "عربي بية",
+			"LangCode": "ar",
+			"CountryCode": "OM"
+		},
+		{
 			"Locale": "as_IN",
 			"Description": "অসমীয়া",
 			"LangCode": "as",

@@ -1,3 +1,9 @@
+deepin-desktop-base (2026.08.26) unstable; urgency=medium
+
+  * 新增 ar_OM 语言配置 (阿拉伯语-阿曼).
+
+ -- lichenggang <lichenggang@deepin.org>  Wed, 26 Aug 2026 10:38:08 +0800
+
 deepin-desktop-base (2026.07.30) unstable; urgency=medium
 
   * update 25.2.1.
